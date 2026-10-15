@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Afang Soup &amp; Swallow - Food Details</title>
+<!-- Tailwind CSS v3 with Plugins -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              primary: '#FF493D',
+              primaryHover: '#EE3D31',
+              peach: '#F8D6C8',
+              peachLight: '#FFF2EC',
+              cardBg: '#FAFAFA',
+              textMain: '#1A1C1E',
+              textMuted: '#71767B',
+            }
+          },
+          fontFamily: {
+            sans: ['-apple-system', 'BlinkMacSystemFont', '"SF Pro Display"', '"Segoe UI"', 'Roboto', 'sans-serif'],
+          },
+          boxShadow: {
+            'floating': '0 12px 36px -8px rgba(0, 0, 0, 0.08), 0 4px 12px -2px rgba(0, 0, 0, 0.04)',
+            'btn-shadow': '0 10px 24px -4px rgba(255, 73, 61, 0.35)',
+          }
+        }
+      }
+    };
+  </script>
+<!-- BEGIN: Custom Device Styles -->
+<style data-purpose="device-layout">
+    /* Custom iOS Frame styling */
+    body {
+      background-color: #F1EFEA;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+<!-- END: Custom Device Styles -->
+</head>
+<body class="text-brand-textMain">
+<!-- BEGIN: PhoneWrapperContainer -->
+<!-- iPhone 15 Pro form-factor simulation container -->
+<main class="relative w-full max-w-[393px] h-[852px] bg-white rounded-[50px] shadow-2xl border-[9px] border-black overflow-hidden flex flex-col justify-between select-none">
+<!-- BEGIN: iOSStatusBar -->
+<header class="w-full pt-3 px-7 flex justify-between items-center z-30 shrink-0 select-none">
+<!-- iOS Time -->
+<span class="text-[15px] font-semibold tracking-tight text-neutral-900">9:41</span>
+<!-- Dynamic Island Indicator Pill -->
+<div class="w-24 h-5 bg-black rounded-full mx-auto -mt-1"></div>
+<!-- Battery, Wifi & Cellular icons -->
+<div class="flex items-center space-x-1.5 text-neutral-900">
+<!-- Cellular Signal -->
+<svg class="w-4 h-3.5 fill-current" viewbox="0 0 17 12">
+<path d="M1 9.5a1.5 1.5 0 0 1 3 0v1a1.5 1.5 0 0 1-3 0v-1zm4.5-3a1.5 1.5 0 0 1 3 0v4a1.5 1.5 0 0 1-3 0v-4zm4.5-3a1.5 1.5 0 0 1 3 0v7a1.5 1.5 0 0 1-3 0v-7zm4.5-3a1.5 1.5 0 0 1 3 0v10a1.5 1.5 0 0 1-3 0v-10z"></path>
+</svg>
+<!-- Wifi Signal -->
+<svg class="w-4 h-3.5 fill-current" viewbox="0 0 16 12">
+<path d="M8 9.8a1.6 1.6 0 1 0 0 3.2 1.6 1.6 0 0 0 0-3.2zm-4.2-2.8a6.3 6.3 0 0 1 8.4 0 .7.7 0 1 0 .9-1A7.7 7.7 0 0 0 2.9 6a.7.7 0 1 0 .9 1zm-2.8-2.8a10.3 10.3 0 0 1 14 0 .7.7 0 1 0 .9-1 11.7 11.7 0 0 0-15.8 0 .7.7 0 0 0 .9 1z"></path>
+</svg>
+<!-- Battery with fill -->
+<div class="flex items-center">
+<div class="w-5 h-2.5 border border-black rounded-[3px] p-[1px] flex items-center">
+<div class="w-full h-full bg-black rounded-[1.5px]"></div>
+</div>
+<div class="w-0.5 h-1 bg-black rounded-r-[1px] ml-[0.5px]"></div>
+</div>
+</div>
+</header>
+<!-- END: iOSStatusBar -->
+<!-- BEGIN: TopNavigationBar -->
+<nav class="w-full px-5 pt-3 pb-2 flex items-center justify-between shrink-0 bg-white z-20">
+<!-- Back Button -->
+<button aria-label="Back to previous page" class="w-10 h-10 rounded-full border border-neutral-200/80 bg-white flex items-center justify-center text-neutral-800 shadow-sm active:scale-95 transition-transform" data-purpose="back-navigation" type="button">
+<svg class="w-4 h-4 stroke-current stroke-2 fill-none" viewbox="0 0 24 24">
+<path d="M15 19l-7-7 7-7" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+</button>
+<!-- Screen Title -->
+<h1 class="text-base font-bold text-neutral-900 tracking-tight">Food Details</h1>
+<!-- More Options Button -->
+<button aria-label="More options" class="w-10 h-10 rounded-full border border-neutral-200/80 bg-white flex items-center justify-center text-neutral-800 shadow-sm active:scale-95 transition-transform" data-purpose="more-options" type="button">
+<svg class="w-5 h-5 fill-current" viewbox="0 0 24 24">
+<circle cx="12" cy="5" r="1.75"></circle>
+<circle cx="12" cy="12" r="1.75"></circle>
+<circle cx="12" cy="19" r="1.75"></circle>
+</svg>
+</button>
+</nav>
+<!-- END: TopNavigationBar -->
+<!-- BEGIN: ScrollableContent -->
+<div class="flex-1 overflow-y-auto hide-scrollbar px-5 pb-24">
+<!-- BEGIN: HeroProductPresentation -->
+<section class="relative mt-2 flex justify-center items-center" data-purpose="hero-food-display">
+<!-- Subtle circular gradient backdrop aura -->
+<div class="absolute w-64 h-64 bg-amber-100/40 rounded-full blur-2xl pointer-events-none -z-0"></div>
+<!-- Circular Hero Image Display matching reference style -->
+<div class="relative z-10 w-64 h-64 sm:w-68 sm:h-68 rounded-full p-2 bg-white/70 shadow-floating flex items-center justify-center">
+<div class="w-full h-full rounded-full overflow-hidden border-2 border-orange-100/50 shadow-inner">
+<img alt="Authentic Nigerian Afang Soup in a white ceramic bowl with assorted meats, stockfish, dried fish, periwinkles, kpomo, surrounded by freshly prepared smooth pounded yam or fufu swallow in a round platter, fresh green waterleaf garnish, top down overhead shot, professional culinary food photography." class="w-full h-full object-cover object-center transform hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA68yH5Lb2CepQzdWLr1bOowtNShBpe-Pf0VlLX_umhS1fDDJE9EIfdWV8PcI2ljFqVfQhhrTJWLhqlJlh9O34cjxq9zQ79aNZB-rUOTkVLy_LTXdFUYrQNGeMZ0ntN-rQzSDnWdw8IrcvBsV0deoPZoRb3S9DHPYQgIz_NqbdIi4vLiWO0-fkV0c9Fp2kpCNrjzwte5-1v4PXGILcp5kmmEu54AOCV_KkXEsi17LTqYKqkDMq345H-kA"/>
+</div>
+</div>
+</section>
+<!-- END: HeroProductPresentation -->
+<!-- BEGIN: ProductDetailsSection -->
+<section class="mt-4" data-purpose="product-meta">
+<!-- Origin / Category Tag -->
+<span class="inline-block text-[11px] font-bold uppercase tracking-wider text-amber-800 bg-amber-50 px-2.5 py-0.5 rounded-full mb-1">
+          Calabar Delicacy
+        </span>
+<!-- Title & Counter Row -->
+<div class="flex items-center justify-between mt-1">
+<div class="pr-2">
+<p class="text-xs text-brand-textMuted font-medium">Your Orders</p>
+<h2 class="text-xl font-extrabold text-neutral-900 tracking-tight leading-tight">
+              Afang Soup &amp; Swallow
+            </h2>
+</div>
+<!-- Quantity Stepper matching center phone reference -->
+<div class="flex items-center space-x-2 bg-neutral-100/90 rounded-full p-1 border border-neutral-200/60 shadow-inner" data-purpose="quantity-counter">
+<button aria-label="Decrease quantity" class="w-7 h-7 rounded-full bg-white flex items-center justify-center text-neutral-700 shadow-sm active:scale-90 transition-transform font-bold text-sm" type="button">
+              −
+            </button>
+<span class="text-sm font-bold text-neutral-900 w-4 text-center">2</span>
+<button aria-label="Increase quantity" class="w-7 h-7 rounded-full bg-brand-primary text-white flex items-center justify-center shadow active:scale-90 transition-transform font-bold text-sm" type="button">
+              +
+            </button>
+</div>
+</div>
+<!-- Appetising Description -->
+<p class="mt-2.5 text-xs leading-relaxed text-neutral-600 font-normal">
+          Traditional Cross River delicacy slow-cooked with fresh shredded afang and waterleaves, rich palm oil, smoked dried fish, periwinkles, kpomo, and tender assorted beef. Served piping hot with your choice of swallow.
+        </p>
+<!-- Metric badges row -->
+<div class="flex items-center gap-4 mt-3 pt-2 text-xs font-semibold text-neutral-700" data-purpose="metrics-row">
+<!-- Rating -->
+<div class="flex items-center space-x-1 text-amber-500">
+<svg class="w-3.5 h-3.5 fill-current" viewbox="0 0 20 20">
+<path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+</svg>
+<span class="text-neutral-800 font-bold">4.9</span>
+<span class="text-neutral-400 font-normal">(1.4k+)</span>
+</div>
+<!-- Calories -->
+<div class="flex items-center space-x-1 text-orange-600">
+<span>🔥</span>
+<span class="text-neutral-800 font-medium">620 Kcal</span>
+</div>
+<!-- Prep Time -->
+<div class="flex items-center space-x-1 text-neutral-600">
+<span>⏱</span>
+<span class="text-neutral-800 font-medium">20-30 min</span>
+</div>
+</div>
+</section>
+<!-- END: ProductDetailsSection -->
+<!-- BEGIN: SwallowOptionsSelector -->
+<section class="mt-4 pt-1" data-purpose="swallow-selector">
+<label class="block text-xs font-bold text-neutral-900 tracking-tight mb-2">
+          Choose Swallow
+        </label>
+<div class="grid grid-cols-4 gap-2">
+<!-- Option 1: Selected (Pounded Yam) -->
+<button class="py-2 px-1 text-center rounded-xl bg-brand-peach border border-red-200/80 text-brand-textMain font-bold text-xs shadow-sm transition-all" type="button">
+            Pounded Yam
+          </button>
+<!-- Option 2: Garri / Eba -->
+<button class="py-2 px-1 text-center rounded-xl bg-neutral-100 text-neutral-600 font-medium text-xs hover:bg-neutral-200/70 border border-transparent transition-all" type="button">
+            Garri / Eba
+          </button>
+<!-- Option 3: Fufu / Akpu -->
+<button class="py-2 px-1 text-center rounded-xl bg-neutral-100 text-neutral-600 font-medium text-xs hover:bg-neutral-200/70 border border-transparent transition-all" type="button">
+            Fufu / Akpu
+          </button>
+<!-- Option 4: Semovita -->
+<button class="py-2 px-1 text-center rounded-xl bg-neutral-100 text-neutral-600 font-medium text-xs hover:bg-neutral-200/70 border border-transparent transition-all" type="button">
+            Semovita
+          </button>
+</div>
+</section>
+<!-- END: SwallowOptionsSelector -->
+<!-- BEGIN: PortionSizeSelector -->
+<section class="mt-4" data-purpose="portion-selector">
+<label class="block text-xs font-bold text-neutral-900 tracking-tight mb-2">
+          Portion Size
+        </label>
+<div class="flex items-center space-x-3">
+<!-- Standard Size (Selected) -->
+<button class="flex-1 py-2 px-3 rounded-xl bg-brand-peach border border-red-200 font-semibold text-xs text-neutral-900 flex justify-between items-center" type="button">
+<span>Standard</span>
+<span class="text-neutral-800 font-bold">₦6,500</span>
+</button>
+<!-- Jumbo Size -->
+<button class="flex-1 py-2 px-3 rounded-xl bg-neutral-100 hover:bg-neutral-200/70 border border-transparent font-medium text-xs text-neutral-600 flex justify-between items-center transition-colors" type="button">
+<span>Jumbo Assorted</span>
+<span class="text-neutral-500 font-semibold">₦8,500</span>
+</button>
+</div>
+</section>
+<!-- END: PortionSizeSelector -->
+</div>
+<!-- END: ScrollableContent -->
+<!-- BEGIN: StickyBottomBar -->
+<footer class="absolute bottom-0 inset-x-0 bg-white/95 backdrop-blur-md border-t border-neutral-100 px-6 pt-3 pb-6 z-30" data-purpose="purchase-action-bar">
+<div class="flex items-center justify-between gap-4">
+<!-- Total Price Display -->
+<div class="shrink-0 flex flex-col justify-center">
+<span class="text-[10px] uppercase font-bold tracking-wider text-neutral-400">Total Price</span>
+<span class="text-2xl font-black text-neutral-950 tracking-tight">
+            ₦6,500
+          </span>
+</div>
+<!-- Add To Cart Primary Action Button -->
+<button class="flex-1 h-12 bg-brand-primary hover:bg-brand-primaryHover text-white rounded-2xl flex items-center justify-center space-x-2 font-bold text-sm shadow-btn-shadow active:scale-[0.98] transition-all duration-200" data-purpose="add-to-cart-button" type="button">
+<!-- Shopping Bag Icon matching center phone reference -->
+<svg class="w-4 h-4 stroke-white stroke-2 fill-none" viewbox="0 0 24 24">
+<path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>
+<span>Add To Cart</span>
+</button>
+</div>
+<!-- iOS Home Indicator -->
+<div class="w-32 h-1 bg-black/80 rounded-full mx-auto mt-4"></div>
+</footer>
+<!-- END: StickyBottomBar -->
+</main>
+<!-- END: PhoneWrapperContainer -->
+</body></html>

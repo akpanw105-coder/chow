@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF5A36"/>
+      <stop offset="100%" stop-color="#E03410"/>
+    </linearGradient>
+    <linearGradient id="warmPeach" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFEADB"/>
+      <stop offset="100%" stop-color="#FFD6BD"/>
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#FF5A36" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  <!-- Background Rounded Squircle -->
+  <rect x="24" y="24" width="464" height="464" rx="112" fill="url(#brandGrad)" filter="url(#softShadow)"/>
+  
+  <!-- Subtle inner ambient ring -->
+  <circle cx="256" cy="256" r="176" fill="none" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="3"/>
+
+  <!-- Steaming Cloche / Pot Cover Shape -->
+  <path d="M160 270 C160 190 200 160 256 160 C312 160 352 190 352 270 Z" fill="#FFFFFF"/>
+  
+  <!-- Pot Handle / Cloche Finial -->
+  <circle cx="256" cy="144" r="18" fill="#FFFFFF"/>
+  <rect x="250" y="156" width="12" height="10" rx="4" fill="#FFFFFF"/>
+
+  <!-- Platter Base Tray -->
+  <rect x="136" y="282" width="240" height="24" rx="12" fill="#FFFFFF"/>
+  
+  <!-- Steam Curves symbolizing fresh hot South-South culinary aroma -->
+  <path d="M216 116 C210 102 218 90 214 78" stroke="#FFEADB" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M256 108 C250 94 258 84 254 70" stroke="#FFEADB" stroke-width="7" stroke-linecap="round" fill="none"/>
+  <path d="M296 116 C302 102 294 90 298 78" stroke="#FFEADB" stroke-width="7" stroke-linecap="round" fill="none"/>
+
+  <!-- Heart / Food Spoon accent cutout inside cloche -->
+  <path d="M256 242 C256 242 236 226 236 214 C236 206 242 200 250 200 C254 200 256 204 256 204 C256 204 258 200 262 200 C270 200 276 206 276 214 C276 226 256 242 256 242 Z" fill="url(#brandGrad)"/>
+
+  <!-- Sleek Food Smile under the tray -->
+  <path d="M196 332 Q256 376 316 332" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round" fill="none"/>
+</svg>

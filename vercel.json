@@ -1,0 +1,26 @@
+{
+  "buildCommand": "npx expo export --platform web",
+  "outputDirectory": "dist",
+  "framework": null,
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/admin/order/:id", "destination": "/admin/order/[id].html" },
+    { "source": "/rider/delivery/:id", "destination": "/rider/delivery/[id].html" },
+    { "source": "/food/:id", "destination": "/food/[id].html" },
+    { "source": "/((?!_expo|assets|favicon.ico).*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/_expo/static/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+      ]
+    }
+  ]
+}
